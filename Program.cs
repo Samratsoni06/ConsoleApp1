@@ -9,6 +9,7 @@ namespace ConsoleApp1
 {
     public class Program
     {
+        //Reverse Number
         public void ReverseNum()
         {
             int n = 125;
@@ -23,6 +24,7 @@ namespace ConsoleApp1
             Console.WriteLine("Reverse Number =  " + result);
         }
 
+        // Palindrom Program
         public void Palindrom()
         {
             int num = 124;
@@ -46,6 +48,7 @@ namespace ConsoleApp1
             }
         }
 
+        // Swaping Two Number
         public void Replace()
         {
             int a = 3, b = 4;
@@ -63,6 +66,7 @@ namespace ConsoleApp1
 
         }
 
+        // Febonic Serise
         public void Febonic(int len)
         {
             int a = 0, b = 1, c = 0;
@@ -82,6 +86,7 @@ namespace ConsoleApp1
             Console.WriteLine();
         }
 
+        // Sorting Arry Without Usinge Sort Method
         public void Sorting()
         {
             //int[] arr1 = new int[10];
@@ -114,6 +119,8 @@ namespace ConsoleApp1
 
         }
 
+
+        // Char Count Usinge Dictionary
         public void StringCount()
         {
             string input = "dhfdytyewyuvvvvvsdgchv";
@@ -140,6 +147,8 @@ namespace ConsoleApp1
 
         }
 
+
+        // Char Count Without Usinge Dictionary
         public void Count()
         {
             Console.Write("Enter a string: ");
@@ -179,7 +188,8 @@ namespace ConsoleApp1
             }
         }
 
-        public void Dublicate()
+        // Remove Dublicate Char
+        public void Dublicate() 
         {
             Console.WriteLine("Enter a string");
             string input = Console.ReadLine();
