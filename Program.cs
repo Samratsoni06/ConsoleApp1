@@ -179,17 +179,50 @@ namespace ConsoleApp1
             }
         }
 
+        public void Dublicate()
+        {
+            Console.WriteLine("Enter a string");
+            string input = Console.ReadLine();
+
+            StringBuilder result = new StringBuilder();
+
+
+            foreach (char c in input)
+            {
+                // Check if the character is already in the result
+                if (!CharacterExists(result, c))
+                {
+                    result.Append(c); // Add character if it doesn't exist in result
+                }
+            }
+
+            Console.WriteLine(result);
+
+        }
+        public bool CharacterExists(StringBuilder sb, char c)
+        {
+            // Check if the character is already in the StringBuilder
+            for (int i = 0; i < sb.Length; i++)
+            {
+                if (sb[i] == c)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static void Main(string[] args)
         {
             Program program = new Program();
-            program.ReverseNum();
-            program.Palindrom();
-            program.Replace();
-            program.Febonic(12);
-            program.Sorting();
-            program.StringCount();
-            program.Count();
-
+            //program.ReverseNum();
+            //program.Palindrom();
+            //program.Replace();
+            //program.Febonic(12);
+            //program.Sorting();
+            //program.StringCount();
+            //program.Count();
+            program.Dublicate();
 
             Console.WriteLine("");
         }
